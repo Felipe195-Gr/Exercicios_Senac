@@ -1,0 +1,44 @@
+nome = input("Digite o seu nome: ")
+idade = int(input("Digite a sua idade: "))
+escolaridade = input("Digite a sua escolaridade(Médio, Técnico ou Faculdade): ").lower()
+esperiencia = input("Você tem experiência nessa área(S/N): ")
+cidade =  input("Você é morador local ou de outra cidade: ")
+nota = int(input("Digite a sua nota: "))
+trabalhar = input("Aceita trabalhar presencialmente(S/N): ")
+
+if idade < 16:
+    status = "Candidato fora da idade mínima"
+
+elif escolaridade == "faculdade" and nota >= 8:
+    status = "Candidato com perfil forte"
+else:
+    status = "Candidato com perfil acadêmico em análise"
+
+if escolaridade == "técnico" and esperiencia == "S" and nota >= 7:
+    status = "Candidato técnico aprovado na pré-análise"
+else:
+    status = "Candidato técnico em observação"
+
+if escolaridade == "médio" and nota >= 9:
+    status = "Candidato com bom potencial"
+
+elif escolaridade != "médio":
+    status = "Escolaridade inválida"
+else:
+    status = "Candidato precisa de mais preparação"
+
+if cidade == "outra" and trabalhar == "N":
+    status = "Não pode seguir para a vaga presencial"
+elif cidade == "outra" and trabalhar == "S":
+    status = "Pode participar, mas precisa de deslocamento"
+else: 
+    status = "Pode participar normalmente"
+
+if nota >= 9 and esperiencia == "S":
+    status = "Candidato destaque"
+elif nota >= 8:
+    status =  "Bom desempenho na entrevista"
+else:
+    status = "Desempenho comum na entrevista"
+print(status)
+
