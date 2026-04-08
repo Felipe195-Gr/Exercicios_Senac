@@ -5,7 +5,7 @@ lista_alunos = []
 alunos = int(input("Digite a quantidade de alunos na sala: "))
 
 for aluno in range(alunos):
-    nome = input(f"Digite o nome do aluno: ")
+    nome = input("Digite o nome do aluno: ")
     nota1 = float(input("Digite a nota do aluno: "))
     nota2 = float(input("Digite a nota do aluno: "))
     media = (nota1 + nota2) /2
