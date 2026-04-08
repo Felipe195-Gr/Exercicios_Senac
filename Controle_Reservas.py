@@ -58,12 +58,6 @@ while sair == 0:
         sair = 1
 
 
-
-
-
-
-
-
 # Não deve permitir quantidade inválida nem reservar uma mesa já ocupada. Também deve permitir
 # remover uma reserva e listar as mesas disponíveis e reservadas. O programa deve continuar executando até o
 # usuário escolher sair.
